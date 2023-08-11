@@ -54,7 +54,7 @@ void storeNeighborsToFile(const std::vector<std::vector<std::pair<int, double>>>
         for (const auto& pair : neighbors[i]) {
             int j = pair.first;
             double weight = pair.second;
-            outFile << i << ", " << j << ", " << weight << "\n";
+            outFile << i << "\t" << j << "\t" << weight << "\n";
         }
     }
 
